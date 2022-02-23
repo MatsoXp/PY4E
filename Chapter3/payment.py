@@ -2,7 +2,6 @@
 
 hrs = input("Hours: ")
 rate = input("Rate: ")
-
 payment = float(hrs) * float(rate)
 
 print("Pay:", payment)
