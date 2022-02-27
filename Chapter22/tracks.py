@@ -1,3 +1,6 @@
+#This application will read an iTunes export file in XML and produce a properly normalized database with this structure: 
+#You can use this code as a starting point for your application: http://www.py4e.com/code3/tracks.zip. The ZIP file contains the Library.xml file to be used for this assignment. You can export your own tracks from iTunes and create a database, but for the database that you turn in for this assignment, only use the Library.xml data that is provided. 
+
 import xml.etree.ElementTree as ET
 import sqlite3
 
@@ -94,3 +97,5 @@ for entry in all:
         ( name, album_id, genre_id, length, rating, count ) )
 
     conn.commit()
+    
+cur.close()
